@@ -1,0 +1,186 @@
+/* Google FontsのPoppinsを適用 */
+body {
+    background-color: #f0f8ff; /* アリスブルーの背景色 */
+    color: #333; /* 文字色を濃いグレーに */
+    /* font-family: 'Poppins', sans-serif; フォントをPoppinsに変更 */
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* カードにシャドウを追加 */
+    border: none; /* カードのボーダーを削除 */
+    border-radius: 15px; /* カードの角を丸くする */
+    border-left: 5px solid #007bff; /* カードの左側に青いボーダーを追加 */
+    margin-bottom: 20px; /* カード間のマージンを追加 */
+    transition: transform 0.2s, box-shadow 0.2s; /* カードにホバー時のアニメーションを追加 */
+}
+
+.card:hover {
+    transform: scale(1.05); /* カードをホバー時にさらに大きく */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* カードのシャドウを強化 */
+}
+
+.card-title {
+    color: #f63737; /* カードタイトルを赤色に */
+    border-bottom: 2px solid #007bff; /* タイトルの下にボーダーを追加 */
+    padding-bottom: 10px; /* タイトルの下の余白を追加 */
+}
+
+.card-text strong {
+    color: #0056b3; /* 強調文字を濃い青色に */
+}
+
+pre {
+    background: #f1f1f1; /* コードブロックの背景色を淡いグレーに */
+    padding: 15px; /* パディングを追加 */
+    border-radius: 10px; /* 角を丸くする */
+    overflow-x: auto; /* 横スクロールを可能に */
+}
+
+.btn-primary {
+    background-color: #007bff; /* プライマリボタンの背景色を青色に */
+    border-color: #007bff; /* プライマリボタンのボーダー色を青色に */
+    border-radius: 20px; /* ボタンの角を丸くする */
+    font-family: 'Poppins', sans-serif; /* フォントをPoppinsに変更 */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* プライマリボタンのホバー時の背景色を濃い青色に */
+    border-color: #0056b3; /* プライマリボタンのホバー時のボーダー色を濃い青色に */
+}
+
+.btn-success {
+    background-color: #28a745; /* コードコピー用ボタンの背景色を緑色に */
+    border-color: #28a745; /* コードコピー用ボタンのボーダー色を緑色に */
+    border-radius: 20px; /* ボタンの角を丸くする */
+    font-family: 'Poppins', sans-serif; /* フォントをPoppinsに変更 */
+}
+
+.btn-success:hover {
+    background-color: #218838; /* コードコピー用ボタンのホバー時の背景色を濃い緑色に */
+    border-color: #1e7e34; /* コードコピー用ボタンのホバー時のボーダー色を濃い緑色に */
+}
+
+.input-group .form-control {
+    border-radius: 20px 0 0 20px; /* 左側の入力ボックスの角を丸くする */
+    font-family: 'Poppins', sans-serif; /* フォントをPoppinsに変更 */
+}
+
+.input-group .btn-primary {
+    border-radius: 0 20px 20px 0; /* 右側のボタンの角を丸くする */
+    font-family: 'Poppins', sans-serif; /* フォントをPoppinsに変更 */
+}
+
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1050;
+}
+
+/* 上に戻るボタンのスタイル */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#back-to-top:hover {
+    background-color: #495057;
+}
+
+.search-bar {
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* 必要に応じて調整 */
+    background-color: #e3f2fd; /* 背景色を淡い青色に設定 */
+    padding: 10px 20px; /* 上下のパディングを調整 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 下にシャドウを追加 */
+    border-radius: 20px; /* 全体の角を丸くする */
+}
+
+.stylish-input-group .form-control {
+    border-radius: 20px 0 0 20px; /* 左側の入力ボックスの角を丸くする */
+    border-right: none; /* ボックスの右側のボーダーを削除 */
+    box-shadow: none; /* デフォルトのシャドウを削除 */
+    transition: all 0.3s; /* アニメーションを追加 */
+    background-color: #ffffff; /* 入力ボックスの背景色を白に */
+}
+
+.stylish-input-group .form-control:focus {
+    border-color: #007bff; /* フォーカス時のボーダー色を青色に */
+    box-shadow: none; /* フォーカス時のシャドウを削除 */
+}
+
+.stylish-input-group .btn-primary {
+    border-radius: 0 20px 20px 0; /* 右側のボタンの角を丸くする */
+    background-color: #007bff; /* ボタンの背景色を青色に */
+    border-color: #007bff; /* ボタンのボーダー色を青色に */
+    transition: all 0.3s; /* アニメーションを追加 */
+}
+
+.stylish-input-group .btn-primary:hover {
+    background-color: #0056b3; /* ホバー時の背景色を濃い青色に */
+    border-color: #0056b3; /* ホバー時のボーダー色を濃い青色に */
+}
+
+/* PDFで出力ボタンのスタイル */
+.pdf-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1050;
+}
+
+.pdf-button:hover {
+    background-color: #138496;
+}
+/* 追従するtxtボタンのスタイル */
+.txt-button {
+    position: sticky;
+    top: 10px;
+    z-index: 1000;
+    margin-left: 10px;
+}
+/* カスタムスタイルシートに追加 */
+.back-to-top-btn, .txt-output-btn {
+    position: fixed;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.back-to-top-btn:hover, .txt-output-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.txt-output-btn {
+    bottom: 80px; /* 上に戻るボタンの上に配置 */
+    background-color: #17a2b8; /* テキストボタンの背景色 */
+    color: #fff; /* テキストボタンの文字色 */
+}
+
